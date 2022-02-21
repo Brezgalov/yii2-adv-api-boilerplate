@@ -16,6 +16,10 @@ $config = [
     'params' => [],
     'controllerMap' => [
         'schedule' => \omnilight\scheduling\ScheduleController::class,
+        'migrate' => [
+            'class' => \yii\console\controllers\MigrateController::class,
+            'migrationPath' => '@console/migrations'
+        ],
 //        'fixture' => [ // Fixture generation command line.
 //            'class' => 'yii\faker\FixtureController',
 //        ],
