@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fd82fc0e53584ea03bffb5c785d3191",
+    "content-hash": "b28bdccca59ad61c47ccace19f599c16",
     "packages": [
         {
             "name": "behat/gherkin",
@@ -158,48 +158,6 @@
             "license": [
                 "MIT"
             ]
-        },
-        {
-            "name": "brezgalov/yii2-domain-model",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Brezgalov/yii2-domain-model.git",
-                "reference": "e41c957d17ea3e5e26c69e333e2fcbede4bbd30f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Brezgalov/yii2-domain-model/zipball/e41c957d17ea3e5e26c69e333e2fcbede4bbd30f",
-                "reference": "e41c957d17ea3e5e26c69e333e2fcbede4bbd30f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.0",
-                "yiisoft/yii2": ">=2.0.44"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Brezgalov\\DomainModel\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Oleg Brezgalov",
-                    "email": "oleg.brezgalov@gmail.com"
-                }
-            ],
-            "description": "This package contains classes and interfaces helping you make your code more specific and domain-oriented",
-            "support": {
-                "issues": "https://github.com/Brezgalov/yii2-domain-model/issues",
-                "source": "https://github.com/Brezgalov/yii2-domain-model/tree/master"
-            },
-            "time": "2022-02-18T10:50:20+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -6965,9 +6923,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "brezgalov/yii2-domain-model": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

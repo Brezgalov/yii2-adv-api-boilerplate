@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'd38054c9bd3166ad30522d7986bf557e256d229a',
         'name' => 'yiisoft/yii2-app-advanced',
         'dev' => true,
     ),
@@ -62,17 +62,6 @@
             'install_path' => __DIR__ . '/../bower-asset/yii2-pjax',
             'aliases' => array(),
             'reference' => 'aef7b953107264f00234902a3880eb50dafc48be',
-            'dev_requirement' => false,
-        ),
-        'brezgalov/yii2-domain-model' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../brezgalov/yii2-domain-model',
-            'aliases' => array(
-                0 => '9999999-dev',
-            ),
-            'reference' => 'e41c957d17ea3e5e26c69e333e2fcbede4bbd30f',
             'dev_requirement' => false,
         ),
         'cebe/markdown' => array(
@@ -946,12 +935,12 @@
             'dev_requirement' => false,
         ),
         'yiisoft/yii2-app-advanced' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'd38054c9bd3166ad30522d7986bf557e256d229a',
             'dev_requirement' => false,
         ),
         'yiisoft/yii2-bootstrap4' => array(

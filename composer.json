@@ -24,7 +24,6 @@
         "yiisoft/yii2-bootstrap4": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "yiisoft/yii2-httpclient": "*",
-        "brezgalov/yii2-domain-model": "@dev",
         "yii2mod/yii2-swagger": "^1.1",
         "omnilight/yii2-scheduling": "^1.1",
         "codeception/codeception": "^4.1",

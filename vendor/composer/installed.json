@@ -172,51 +172,6 @@
             "install-path": "../bower-asset/yii2-pjax"
         },
         {
-            "name": "brezgalov/yii2-domain-model",
-            "version": "dev-master",
-            "version_normalized": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Brezgalov/yii2-domain-model.git",
-                "reference": "e41c957d17ea3e5e26c69e333e2fcbede4bbd30f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Brezgalov/yii2-domain-model/zipball/e41c957d17ea3e5e26c69e333e2fcbede4bbd30f",
-                "reference": "e41c957d17ea3e5e26c69e333e2fcbede4bbd30f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.0",
-                "yiisoft/yii2": ">=2.0.44"
-            },
-            "time": "2022-02-18T10:50:20+00:00",
-            "default-branch": true,
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Brezgalov\\DomainModel\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Oleg Brezgalov",
-                    "email": "oleg.brezgalov@gmail.com"
-                }
-            ],
-            "description": "This package contains classes and interfaces helping you make your code more specific and domain-oriented",
-            "support": {
-                "issues": "https://github.com/Brezgalov/yii2-domain-model/issues",
-                "source": "https://github.com/Brezgalov/yii2-domain-model/tree/master"
-            },
-            "install-path": "../brezgalov/yii2-domain-model"
-        },
-        {
             "name": "cebe/markdown",
             "version": "1.2.1",
             "version_normalized": "1.2.1.0",
