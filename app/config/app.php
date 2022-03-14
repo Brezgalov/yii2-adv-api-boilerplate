@@ -1,5 +1,11 @@
 <?php
 
+defined('MINUTE') or define('MINUTE', 60);
+defined('HOUR') or define('HOUR', 3600);
+defined('DAY') or define('DAY', 86400);
+
+defined('DATETIME_FORMAT') or define('DATETIME_FORMAT', 'Y-m-d H:i:s');
+
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
