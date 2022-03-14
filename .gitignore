@@ -25,3 +25,9 @@ phpunit.phar
 
 # vagrant runtime
 /.vagrant
+
+api/runtime/logs
+api/runtime/debug
+
+console/runtime/logs
+console/runtime/debug
