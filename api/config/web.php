@@ -5,7 +5,7 @@ $homeUrl = ($https ? 'https' : 'http') . "://{$_SERVER['SERVER_NAME']}:{$_SERVER
 
 $config = [
     'id' => 'api-suite',
-    'name' => $_ENV['APP_NAME'] ?? 'myAdminApp',
+    'name' => $_ENV['APP_NAME'] ?? 'myApiApp',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'api\controllers',
     'defaultRoute' => 'root',
