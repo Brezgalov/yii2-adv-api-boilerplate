@@ -1,0 +1,29 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Yii console bootstrap file.
+ *
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright (c) 2008 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ */
+
+ini_set("date.timezone",'Europe/Moscow');
+
+require_once __DIR__ . '/vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/app');
+$dotenv->load();
+
+define('YII_ENV', $_ENV['APP_ENV'] ?: 'prod');
+define('YII_DEBUG', $_ENV['APP_ENV'] !== 'prod');
+
+require_once __DIR__ . '/vendor/yiisoft/yii2/Yii.php';
+
+$config = $config = yii\helpers\ArrayHelper::merge(
+    require __DIR__ . '/console/config/console.php',
+    require __DIR__ . '/app/config/app.php'
+);
+
+$application = new yii\console\Application($config);
+$exitCode = $application->run();
+exit($exitCode);

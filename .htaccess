@@ -1,0 +1,11 @@
+# use mod_rewrite for pretty URL support
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} ^/(api)
+RewriteRule ^api/(.*)$ api/web/$1 [L]
+
+RewriteCond %{REQUEST_URI} ^/(admin)
+RewriteRule ^admin/(.*)$ admin/web/$1 [L]
+
+# Redirect to 404 or js frontend app
+#RewriteRule ^.*$ frontend/%{REQUEST_URI} [L]

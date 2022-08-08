@@ -1,0 +1,16 @@
+RewriteEngine on
+
+RewriteRule ^index.php/ - [L,R=404]
+
+# If a directory or a file exists, use the request directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise forward the request to index.php
+RewriteRule . index.php
+
+Header always set Access-Control-Allow-Origin: "*"
+Header always set Access-Control-Allow-Credentials: true
+Header always set Access-Control-Allow-Methods "POST, GET, PUT, PATCH, DELETE, OPTIONS"
+Header always set Access-Control-Allow-Headers "Authorization,X-Requested-With, content-type, x-pagination-current-page, x-pagination-page-count, x-pagination-per-page, x-pagination-total-count"
+Header always set Access-Control-Expose-Headers: "*"

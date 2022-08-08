@@ -1,0 +1,20 @@
+# Codeception Test Suite Configuration
+
+# suite for unit (internal) tests.
+# RUN `build` COMMAND AFTER ADDING/REMOVING MODULES.
+suite_namespace: app\tests\unit
+class_name: UnitTester
+modules:
+  enabled:
+    - Filesystem
+    - Asserts
+    - Yii2:
+        configFile: '@app/config/test.php'
+        part: [orm, email, fixtures]
+        recreateComponents: [fixtures]
+        cleanup: false
+        transaction: false
+coverage:
+  enabled: true
+  include:
+    - components/*
