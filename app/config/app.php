@@ -14,10 +14,10 @@ return [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
 
-        '@admin' => __DIR__ . '/../',
+        '@admin' => __DIR__ . '/../../admin',
         '@app' => __DIR__ . '/../',
         '@api' => __DIR__ . '/../../api',
-        '@console' => __DIR__ . '/../',
+        '@console' => __DIR__ . '/../../console',
         '@tests' => '@app/tests',
     ],
     'bootstrap' => [

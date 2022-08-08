@@ -1,7 +1,9 @@
 <?php
 
-$config = [
-    'id' => 'basic-console',
+$app = require (__DIR__ . '/../../app/config/app.php');
+
+$config = \yii\helpers\ArrayHelper::merge($app, [
+    'id' => 'console',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'console\controllers',
     'components' => [
@@ -14,11 +16,8 @@ $config = [
             'class' => \yii\console\controllers\MigrateController::class,
             'migrationPath' => '@console/migrations'
         ],
-//        'fixture' => [ // Fixture generation command line.
-//            'class' => 'yii\faker\FixtureController',
-//        ],
     ],
-];
+]);
 
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
