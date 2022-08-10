@@ -82,3 +82,14 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+.page-link {
+    color: #29619e;
+}
+.page-item.active .page-link {
+    background-color: #29619e;
+    border-color: #29619e;
+}
+a {
+    color: #29619e;
+}

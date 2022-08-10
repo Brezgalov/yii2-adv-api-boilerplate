@@ -9,6 +9,7 @@ use yii\bootstrap4\Breadcrumbs;
 use yii\bootstrap4\Html;
 use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
+use yii\helpers\Url;
 
 DefaultAsset::register($this);
 
@@ -43,11 +44,11 @@ $identity = \Yii::$app->user->getIdentity();
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav justify-content-end'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/root/index']],
+            ['label' => 'Home', 'url' => Url::toRoute("/root/index")],
             $identity ? (
-                ['label' => "Logout [{$identity->username}]", "url" => "/auth/logout"]
+                ['label' => "Logout [{$identity->username}]", "url" => Url::toRoute("/auth/logout")]
             ) : (
-                ['label' => "Login", "url" => ["/auth/login"]]
+                ['label' => "Login", "url" => Url::toRoute("/auth/login")]
             ),
         ],
     ]);
@@ -57,9 +58,17 @@ $identity = \Yii::$app->user->getIdentity();
 
 <main role="main" class="flex-shrink-0">
     <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
+        <?php if ($this->title): ?>
+            <div class="row">
+                <div class="col">
+                    <h2><?= $this->title ?></h2>
+                </div>
+                <div class="col">
+                    <?= $this->params['title-right'] ?? null ?>
+                </div>
+            </div>
+            <hr>
+        <?php endif; ?>
         <?= $content ?>
     </div>
 </main>
