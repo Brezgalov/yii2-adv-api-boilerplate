@@ -23,7 +23,7 @@ class AuthController extends Controller
                     'submitUrl' => Url::toRoute('login-submit'),
                 ],
                 'methodName' => LoginPage::METHOD_FOR_DISPLAY_PAGE,
-                'title' => 'Login',
+                'title' => 'Авторизация',
                 'view' => 'auth/login',
             ],
             'login-submit' => [
@@ -33,7 +33,7 @@ class AuthController extends Controller
                     'submitUrl' => Url::toRoute('login-submit'),
                 ],
                 'methodName' => LoginPage::METHOD_FOR_SUBMIT,
-                'title' => 'Login',
+                'title' => 'Авторизация',
                 'view' => 'auth/login',
                 'formatter' => [
                     'class' => RenderOrRedirectFormatter::class,
